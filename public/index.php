@@ -46,7 +46,7 @@ function rate($pair_string)
 		return error('That is not a valid pair');
 	}
 
-	foreach ($currency as $key => $pair) {
+	foreach ($pair as $currency) {
 		if (!array_key_exists($currency, $rates)) {
 			return error("There are no rates for $currency");
 		}
