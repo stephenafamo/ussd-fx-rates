@@ -1,0 +1,12 @@
+{
+  "require": {
+    "php": "^7.0.0",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "scripts": {
+    "compile": [
+      "chmod -R 777 current_rates.json",
+      "chmod -R 777 last_timestamp"
+    ]
+  }
+}
