@@ -5,8 +5,8 @@
   },
   "scripts": {
     "compile": [
-      "chmod -R 777 current_rates.json",
-      "chmod -R 777 last_timestamp"
+      "touch current_rates.json && chmod -R 777 current_rates.json",
+      "touch last_timestamp && chmod -R 777 last_timestamp"
     ]
   }
 }
