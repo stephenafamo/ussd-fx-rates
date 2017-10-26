@@ -52,7 +52,7 @@ function rate($pair_string)
 		}
 	}
 
-	$reply 	 = 'END ';
+	$reply 	 = 'CON ';
 	$reply 	.= '1 ' . $pair[0] . " = " . number_format($rates[$pair[1]] / $rates[$pair[0]], 5) . " " . $pair[1] . "\n";
 	$reply 	.= '1 ' . $pair[1] . " = " . number_format($rates[$pair[0]] / $rates[$pair[1]], 5) . " " . $pair[0] . "\n";
 
