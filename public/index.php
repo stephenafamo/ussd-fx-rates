@@ -82,11 +82,11 @@ function getResponse()
 		$response 	= $client->get('latest.json', ['query' => $query])->getBody()->getContents();
 
 		$current_rates = fopen("../current_rates.json","w");
-		echo fwrite($current_rates, $response);
+		fwrite($current_rates, $response);
 		fclose($current_rates);
 
 		$last_timestamp = fopen("../last_timestamp","w");
-		echo fwrite($last_timestamp, time());
+		fwrite($last_timestamp, time());
 		fclose($last_timestamp);
 	}
 
