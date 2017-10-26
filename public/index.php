@@ -18,7 +18,7 @@ function base($reply = "")
 	if (empty($reply))
 		$reply .= 'CON ';
 
-	$reply .= 'Enter two currencies separated to get the rates between them. e.g. "USD NGN"';
+	$reply .= 'Enter two currencies separated by a space to get the rates between them. e.g. "USD NGN"';
 
 	return $reply;	
 }
